@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://danisando.com`,
     title: "proyecto1",
   },
   plugins: [
