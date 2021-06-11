@@ -9,6 +9,8 @@ const ContenedorBuscar = styled.div`
  background-color:#060B13;
  display:flex;
  
+
+ 
  align-items:center;
  justify-content:center;
  @media screen and (max-height:570px) {
@@ -16,26 +18,31 @@ const ContenedorBuscar = styled.div`
 }`
 const ContenedorTitulo = styled.div`
 position: absolute;
-width: 130px;
-height: 45px;
+width: 34.5%;
+max-width:800px;
+min-width:130px;
+height: 8%;
+min-height: 45px;
 top: 35%;
 margin:0 auto;
 
 
+
 background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- `
+`
 const Titulo = styled.div`
+
 position: absolute;
 margin: 0 auto;
 width: 100%;
-heigt:100%;
+height:100%;
 justify-content: center;
 
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 36px;
+font-size: calc(210% + 1vw + 1vh );
 line-height: 42px;
 display: flex;
 align-items: center;
@@ -56,7 +63,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);`
 const Subtitulo = styled.div``
 const ContenedorBuscador = styled.div`
 position: absolute;
-width: 276px;
+width: 74%;
 height: 47px;
 top: 72%;
 

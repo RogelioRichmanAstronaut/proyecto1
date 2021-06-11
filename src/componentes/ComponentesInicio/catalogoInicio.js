@@ -23,8 +23,13 @@ margin: 0 auto;
 align-items:center;
 justify-content:center;
 position: absolute;
-width: 200px;
-height: 42px;
+width: 53.5%;
+min-width:200px;
+max-width:2214.63px;
+
+height:13%;
+min-height: 42px;
+
 top: 5%;
 
 background: #2A6F58;
@@ -38,7 +43,7 @@ position: absolute;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
-font-size: 36px;
+font-size: calc(150% + 1vw + 1vh );
 line-height: 42px;
 display: flex;
 align-items: center;
@@ -51,13 +56,48 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 const ContenedorSecciones = styled.div`
 position: absolute;
 top: 30%;
-width: 276px;
-height: 197px;
+width: 80%;
+height: 55%;
 
 background: #90D5BE;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-`
 
+display:grid;
+grid-auto-columns: minmax(auto,1fr);
+align-items:center;
+grid-template-areas :'col2 col1';
+
+/*@media screen and (max-width: 768px){
+  grid-template-areas: 'col1' 'col2';
+}*/
+`
+const Columna1 = styled.div`
+margin-bottom:15px;
+padding: 0 15px;
+grid-area:col1;
+align-items:center;
+@media screen and (max-width: 768px){
+ padding: 0;}`
+const Columna2 = styled.div`
+margin-bottom:15px;
+padding: 0 15px;
+grid-area:col2;
+@media screen and (max-width: 768px){
+ padding: 0;
+}`
+const LinkWrapper = styled.div`
+width:100%;
+padding-top: 0;
+padding-bottom: 60px;
+@media screen and (max-width: 768px){
+    width: 100%;
+}`
+const TituloSeccion = styled.h1`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+font-weight: 600;
+color:white;`
 
 const catalogoInicio = () => {
     return (
@@ -66,7 +106,22 @@ const catalogoInicio = () => {
                 <Titulo>CATÁLOGO</Titulo>
             </ContenedorTitulo>
             <ContenedorSecciones>
-
+                <Columna1>
+                    <LinkWrapper>
+                        <TituloSeccion>Hola wey</TituloSeccion>
+                    </LinkWrapper>
+                    <LinkWrapper>
+                        <TituloSeccion>Hola wey</TituloSeccion>
+                    </LinkWrapper>
+                </Columna1>
+                <Columna2>
+                    <LinkWrapper>
+                        <TituloSeccion>Hola wey</TituloSeccion>
+                    </LinkWrapper>
+                    <LinkWrapper>
+                        <TituloSeccion>Hola wey</TituloSeccion>
+                    </LinkWrapper>
+                </Columna2>
             </ContenedorSecciones>
         </ContenedorCatalogo>
     )
