@@ -69,7 +69,8 @@ display:grid;
 grid-auto-columns: minmax(auto,1fr);
 align-items:center;
 
-
+width:100%;
+height:75%;
 
 grid-template-areas :'col2 col1';
 
@@ -88,6 +89,9 @@ align-items:center;
  padding: 0;}
  @media screen and (min-height: 672px){
     margin-top:10%;
+}
+@media screen and (min-width: 443px){
+    margin-top:1%;
 }`
 const Columna2 = styled.div`
 margin-top:0%;
@@ -99,6 +103,9 @@ flex-direction: column;
 }
 @media screen and (min-height: 672px){
     margin-top:10%;
+}
+@media screen and (min-width: 443px){
+    margin-top:1%;
 }`
 const LinkWrapper = styled.div`
 display: flex;
@@ -114,8 +121,9 @@ width:100%;
 @media screen and (max-width: 768px){
     width: 100%;
 }
+
 @media screen and (min-height: 770px){
-    padding-top: 8%;
+    padding-top: 0%;
 }`
 const TituloSeccion = styled.h1`
 margin-bottom: 24px;
@@ -126,16 +134,41 @@ color:white;
 
 
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);`
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/*@media screen and (min-width: 525px){
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 865px){
+    margin-bottom: 0px;
+}*/`
 
 const ContenedorVerMas = styled.div`
-
-margin: 0px 10px;
+height:30%;
+width:70%;
+max-width:790px;
+margin: 0 auto;
 justify-content: center;
 align-items: center;
 text-align: center;
 `
-const VerMas = styled.div``
+const VerMas = styled.h2`
+
+font-size: calc(80% + 1vw + 1vh );
+line-height: 1.1;
+font-weight: 600;
+color:white;
+
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/*@media screen and (min-width: 525px){
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 865px){
+    margin-bottom: 0px;
+}*/`
 
 const catalogoInicio = () => {
     return (
@@ -163,7 +196,7 @@ const catalogoInicio = () => {
                     </Columna2>
                 </ContenedorColumnas>
                 <ContenedorVerMas>
-                    <TituloSeccion>Ver todas</TituloSeccion>
+                    <VerMas>Ver todas</VerMas>
                 </ContenedorVerMas>
             </ContenedorSecciones>
             

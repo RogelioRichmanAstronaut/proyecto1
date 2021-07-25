@@ -69,20 +69,22 @@ padding: 0 15px;
 display: flex;
 flex-direction: column;
 align-items:center;
+justify-content:center;
+
+width:90%;;
+height:75%;
+
 
 @media screen and (max-width: 768px){
  padding: 0;}
- @media screen and (min-height: 672px){
-    margin-top:10%;
-}
 `
 const Texto = styled.h2`
-margin-bottom: 24px;
+display:flex;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: calc(80% + 1vw + 1vh );
-line-height: 42px;
+line-height: calc(80% + 1vw + 1vh );
 display: flex;
 align-items: center;
 text-align: center;
@@ -90,8 +92,26 @@ color:white;
 
 
 //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
+const CVerMas = styled.div`
+display:flex;
+height:22%;
+width:65%;
+margin: 0 auto;`
+const VerMas = styled.h2`
+margin: 0 auto;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: calc(80% + 1vw + 1vh );
+line-height: calc(80% + 1vw + 1vh );
+display: flex;
+align-items: center;
+text-align: center;
+color:white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+`
+
 
 const nosotrosInicio = () => {
     return (
@@ -103,6 +123,9 @@ const nosotrosInicio = () => {
                 <CTexto>
                     <Texto>Hola buenardos xd soy danielvi alias el vicentini me gusta el queso y la salchipapa</Texto>
                 </CTexto>
+                <CVerMas>
+                    <VerMas>Ver más {">"}</VerMas>
+                </CVerMas>
             </RecuadroNosotros>
         </ContenedorNosotros>
     )
