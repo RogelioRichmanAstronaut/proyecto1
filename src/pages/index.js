@@ -1,6 +1,7 @@
 import * as React from "react"
 import BuscarInicio from "../componentes/ComponentesInicio/buscarInicio"
 import CatalogoInicio from "../componentes/ComponentesInicio/catalogoInicio"
+import ContactoInicio from "../componentes/ComponentesInicio/contactoInicio"
 import NosotrosInicio from "../componentes/ComponentesInicio/nosotrosInicio"
 import Layout from '../componentes/Layout/layout'
 
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <BuscarInicio />
     <CatalogoInicio />
     <NosotrosInicio />
+    <ContactoInicio />
   </Layout>
   </>
 )
