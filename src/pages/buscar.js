@@ -1,31 +1,29 @@
-import React from 'react'
+import * as React from "react"
+import { Link } from "gatsby"
 import styled from 'styled-components'
 
-import { Link } from "gatsby"
+import Layout from "../componentes/Layout/layout"
+
+import Logobar from '../componentes/logobar'
 
 const ContenedorBuscar = styled.div`
- top: 0;
- position: relative;
- width:100%;
- height: 45vh;
- background-color:#060B13;
- display:flex;
- 
+position: relative;
+width:100%;
+height: 100vh;
+background: #060B13;
+display:flex;
+justify-content:center;
+align-items: center;
 
- 
- align-items:center;
- justify-content:center;
- @media screen and (max-height:570px) {
-    min-height: 256.5px;
-}`
-const ContenedorTitulo = styled(Link)`
+`
+const ContenedorTitulo = styled.div`
 position: absolute;
 width: 34.5%;
 max-width:800px;
 min-width:130px;
-height: 8%;
+height: 4%;
 min-height: 45px;
-top: 35%;
+top: 17%;
 margin:0 auto;
 
 
@@ -52,6 +50,15 @@ text-align: center;
 
 color: #ECF0F9;
 `
+const ContenedorBuscador = styled.div`
+position: absolute;
+width: 74%;
+height: 47px;
+top: 30%;
+
+background: #8BA5DA;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`
 
 const ContenedorInfo = styled.div`
 position: absolute;
@@ -63,30 +70,31 @@ top: 58%;
 background: #3D69C2;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);`
 const Subtitulo = styled.div``
-const ContenedorBuscador = styled.div`
+
+const Atras = styled.div`
 position: absolute;
-width: 74%;
-height: 47px;
-top: 72%;
+width: 200px;
+height: 42px;
 
-background: #8BA5DA;
+background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- `
+bottom: 5%;
+`
 
-
-const buscarInicio = () => {
-    return (
+const buscar = () => (
+    <Layout>
         <ContenedorBuscar>
-            <ContenedorTitulo to="/buscar">
+            <Logobar />
+            <ContenedorTitulo>
                 <Titulo>Buscar</Titulo>
             </ContenedorTitulo>
+            <ContenedorBuscador></ContenedorBuscador>
             <ContenedorInfo>
                 <Subtitulo></Subtitulo>
             </ContenedorInfo>
-            <ContenedorBuscador>
-            </ContenedorBuscador>
+            <Atras>Volver</Atras>
         </ContenedorBuscar>
-    )
-}
+    </Layout>
+)
 
-export default buscarInicio
+export default buscar
