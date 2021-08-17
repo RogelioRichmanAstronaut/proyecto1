@@ -49,9 +49,8 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #ECF0F9;
+color: white;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const ContenedorSecciones = styled.div`
 position: absolute;
@@ -59,7 +58,7 @@ top: 30%;
 width: 80%;
 height: 55%;
 
-background: #8BA5DA;
+background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 `
@@ -132,8 +131,6 @@ font-weight: 600;
 color:white;
 
 
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /*@media screen and (min-width: 525px){
     margin-bottom: 10px;
@@ -158,9 +155,6 @@ line-height: 1.1;
 font-weight: 600;
 color:white;
 
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /*@media screen and (min-width: 525px){
     margin-bottom: 10px;

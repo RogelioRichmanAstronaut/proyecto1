@@ -14,7 +14,7 @@ background: #060B13;
 display:flex;
 justify-content:center;
 align-items: center;
-
+min-height: 512px;
 `
 const ContenedorTitulo = styled.div`
 position: absolute;
@@ -25,7 +25,7 @@ height: 4%;
 min-height: 45px;
 top: 17%;
 margin:0 auto;
-
+color: white;
 
 
 background: #253F74;
@@ -48,7 +48,7 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #ECF0F9;
+
 `
 const ContenedorBuscador = styled.div`
 position: absolute;
@@ -56,22 +56,27 @@ width: 74%;
 height: 47px;
 top: 30%;
 
-background: #8BA5DA;
+background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 `
 
 const ContenedorInfo = styled.div`
 position: absolute;
-width: 221px;
-height: 21px;
+width: 74%;
+height: 197px;
 
-top: 58%;
+top: 45%;
 
 background: #3D69C2;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);`
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@media screen and (min-height:580px) {
+    top: 50%;
+}
+`
 const Subtitulo = styled.div``
 
-const Atras = styled.div`
+const Atras = styled(Link)`
 position: absolute;
 width: 200px;
 height: 42px;
@@ -79,6 +84,8 @@ height: 42px;
 background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 bottom: 5%;
+
+color: #ECF0F9;
 `
 
 const buscar = () => (
@@ -92,7 +99,9 @@ const buscar = () => (
             <ContenedorInfo>
                 <Subtitulo></Subtitulo>
             </ContenedorInfo>
-            <Atras>Volver</Atras>
+            <Atras to="/">
+                <Titulo>Volver</Titulo>
+            </Atras>
         </ContenedorBuscar>
     </Layout>
 )

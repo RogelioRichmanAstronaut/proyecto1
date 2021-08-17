@@ -15,7 +15,7 @@ const Nav = styled.div`
  align-items:center;
  padding: 1rem 2rem;
  width: 192px;
- background-color: #827B17;
+ background-color: #8BA5DA;
  margin: 0 auto;
 
  position: absolute;
@@ -47,16 +47,16 @@ const LogoContenedor = styled.div`
     bottom: 16px;
     background: radial-gradient(
       circle, 
-        rgba( 139, 165, 218, 1.00) 0%,
-        rgba( 139, 165, 218, 1.00)100%),
-        radial-gradient(ellipse, rgba( 139, 165, 218, 1.00) 0%, transparent 100%);
+        rgba( 130, 123, 23, 1.00) 0%,
+        rgba( 130, 123, 23, 1.00)100%),
+        radial-gradient(ellipse, rgba( 130, 123, 23, 1.00) 0%, transparent 100%);
       z-index: 4;
 }
  `
 const LogoTexto = styled.div`
  position: relative;
  z-index: 5;
- color: #ECF0F9;
+ color: white;
  cursor: pointer;
  text-decoration:none;
  font-size: 48px;`

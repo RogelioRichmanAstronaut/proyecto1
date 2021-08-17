@@ -50,7 +50,7 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #ECF0F9;
+color: white;
 `
 
 const ContenedorInfo = styled.div`
@@ -69,7 +69,7 @@ width: 74%;
 height: 47px;
 top: 72%;
 
-background: #8BA5DA;
+background: #253F74;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  `
 

@@ -49,9 +49,8 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #FBFAE9;
+color: white;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const RecuadroNosotros = styled.div`
 position: absolute;
@@ -59,7 +58,7 @@ top: 30%;
 width: 80%;
 height: 55%;
 
-background: #E8E17D;
+background: #827B17;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const CTexto = styled.div`
@@ -91,7 +90,6 @@ text-align: center;
 color:white;
 
 
-//box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const CVerMas = styled.div`
 display:flex;
@@ -109,7 +107,6 @@ display: flex;
 align-items: center;
 text-align: center;
 color:white;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 `
 
 

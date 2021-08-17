@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "gatsby"
 
 const ContenedorCatalogo = styled.div`
  position: relative;
@@ -17,7 +18,7 @@ const ContenedorCatalogo = styled.div`
  @media screen and (max-height:570px) {
     min-height: 256.5px;
 }`
-const ContenedorTitulo = styled.div`
+const ContenedorTitulo = styled(Link)`
 display:flex;
 margin: 0 auto;
 align-items:center;
@@ -49,9 +50,8 @@ display: flex;
 align-items: center;
 text-align: center;
 
-color: #EDF8F4;
+color: white;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 const ContenedorSecciones = styled.div`
 position: absolute;
@@ -59,7 +59,7 @@ top: 30%;
 width: 80%;
 height: 55%;
 
-background: #90D5BE;
+background: #2A6F58;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
@@ -133,8 +133,6 @@ font-weight: 600;
 color:white;
 
 
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /*@media screen and (min-width: 525px){
     margin-bottom: 10px;
@@ -152,16 +150,12 @@ justify-content: center;
 align-items: center;
 text-align: center;
 `
-const VerMas = styled.h2`
+const VerMas = styled(Link)`
 
 font-size: calc(80% + 1vw + 1vh );
 line-height: 1.1;
 font-weight: 600;
 color:white;
-
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 /*@media screen and (min-width: 525px){
     margin-bottom: 10px;
@@ -173,7 +167,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 const catalogoInicio = () => {
     return (
         <ContenedorCatalogo>
-            <ContenedorTitulo>
+            <ContenedorTitulo to="/catalogo">
                 <Titulo>CATÁLOGO</Titulo>
             </ContenedorTitulo>
             <ContenedorSecciones>
@@ -196,7 +190,7 @@ const catalogoInicio = () => {
                     </Columna2>
                 </ContenedorColumnas>
                 <ContenedorVerMas>
-                    <VerMas>Ver todas</VerMas>
+                    <VerMas to="/catalogo">Ver todas</VerMas>
                 </ContenedorVerMas>
             </ContenedorSecciones>
             
